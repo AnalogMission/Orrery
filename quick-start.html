@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orrery Quick Start</title>
+<link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=B612+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0b;--panel:#151515;--line:#2c2a25;--ink:#e9e3d0;--dim:#9a9483;--brass:#d6b26a;--brass2:#8c6c34;--ph:#78ffa0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "B612",system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:40px 16px 64px}
+header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:28px}
+h1{font-size:28px;letter-spacing:.32em;margin:0;font-weight:700}
+.sub{color:var(--dim);letter-spacing:.24em;font-size:11px;text-transform:uppercase;margin-top:4px}
+h2{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin:36px 0 12px;border-bottom:1px solid var(--line);padding-bottom:6px}
+p{margin:.4em 0 1em}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:12px 14px 12px 54px;background:var(--panel);border:1px solid var(--line);border-radius:6px;margin-bottom:8px}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:11px;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#f3dc9d,var(--brass) 55%,var(--brass2));color:#1a1408;font:700 13px/26px "B612 Mono",monospace;text-align:center}
+.k{display:inline-block;font:700 10px/1 "B612",sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:5px 8px;border-radius:4px;background:linear-gradient(180deg,#3a3d37,#16180f);color:#f6efdc;border:1px solid #000;box-shadow:0 1px 0 rgba(255,255,255,.08);white-space:nowrap}
+.k.lit{background:linear-gradient(180deg,#f0d38c,#b98f45);color:#1a1408}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{width:34%;white-space:normal}
+.note{color:var(--dim);font-size:13px}
+footer{margin-top:44px;color:var(--dim);font:12px "B612 Mono",monospace;border-top:1px solid var(--line);padding-top:12px}
+@media (max-width:560px){td:first-child{width:auto}h1{font-size:22px}}
+</style></head><body><div class="wrap">
+<header><h1>ORRERY</h1><div class="sub">Planetary Synthesizer · Quick Start · v0.300</div></header>
+
+<p>The Orrery turns the real motions of the solar system — orbits, spins, moons — into sound. Every body is pitched and panned by its own orbit. Nothing is random: what you hear is the sky.</p>
+
+<h2>Make a sound in 30 seconds</h2>
+<ol class="steps">
+<li>Open the file in Chrome or Edge, headphones on.</li>
+<li>Press <span class="k lit">Start</span>. The <span class="k">Bells</span> preset engages: the Sun's beam sweeps round and every planet and moon it touches rings.</li>
+<li>Drag the brass <b>throttle</b> to change how fast time runs — from <b>1:1</b> (real time) up to <b>100Myr</b> a second. The hourglass <b>⧗</b> (a thousand years a day) is the sweet spot for bells.</li>
+<li>Click planet keys to mute and unmute them. <span class="k">☉ Sun</span> turns them all on — or all off.</li>
+</ol>
+
+<h2>The three presets</h2>
+<table>
+<tr><td><span class="k">Drone</span></td><td>Every body holds a tone, fading in over a second. Opens the <b>Scope</b> view and sets the throttle to the hourglass.</td></tr>
+<tr><td><span class="k">Clock</span></td><td>The planets become clocks: each blips its own C on every planetary second — Mercury lowest, Pluto highest. Opens the planetary cards at real time.</td></tr>
+<tr><td><span class="k">Bells</span></td><td>The Sun's beam strikes each body as it passes. Click again to stop.</td></tr>
+<tr><td><span class="k">1st</span></td><td>With Bells: only the first body the beam hits in each system rings.</td></tr>
+</table>
+
+<h2>The top line</h2>
+<table>
+<tr><td>TRANSPORT</td><td><span class="k">Start</span> / stop · <span class="k">Panic</span> silences everything · <span class="k">Rec</span> records a stereo WAV · <span class="k">now</span> jumps to the real sky this moment · <span class="k">sync</span> turns every planet to face the Sun (a downbeat).</td></tr>
+<tr><td>VIEW</td><td><span class="k">Clock</span> the planetary instrument cards · <span class="k">Sky</span> the solar system from above (opens here) · <span class="k">Scope</span> a phosphor screen for each system.</td></tr>
+<tr><td>SHOW ☀</td><td>Click the sun to open extra display options (synth and FX racks, keys, names, moons, beams, scale, throttle). Hidden by default.</td></tr>
+</table>
+
+<h2>The planet keys</h2>
+<table>
+<tr><td>Click</td><td>Mute / unmute that planet and its moons. Lit = audible.</td></tr>
+<tr><td>Shift-click</td><td>Solo that planet. Shift-click it again to bring everyone back.</td></tr>
+<tr><td><span class="k">☉ Sun</span></td><td>All on — or, when all are on, all off.</td></tr>
+<tr><td><span class="k lit">Major moons</span> <span class="k lit">Minor moons</span></td><td>Lit = audible. Major are the 19 round moons (our Moon, Io, Titan, Triton, Charon …); minor are all the rest.</td></tr>
+<tr><td><span class="k">Invert</span></td><td>Mirrors every pitch — slow outer orbits ring high, fast inner ones low — and turns the scopes negative.</td></tr>
+</table>
+
+<h2>Good to know</h2>
+<p>Systems are balanced: lonely Mercury sounds about as loud as Saturn with all its moons. Real-time (1:1) is genuinely slow — some events take minutes or years. Push the throttle to hear the slower clocks of the sky come in.</p>
+<p class="note">If it goes silent or strange, press Panic, then Start.</p>
+
+<footer>ORRERY PLANETARY SYNTHESIZER · v0.300 · positions from JPL / IAU data</footer>
+</div></body></html>
