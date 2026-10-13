@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ORRERY PLANETARY SYNTHESIZER v0.300</title>
+<title>ORRERY PLANETARY SYNTHESIZER v0.301</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=B612+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -1922,7 +1922,7 @@ body.vp-orbital #scope{display:block}
       <polygon points="247.5,455 495,820 247.5,1185 0,820"/>
       <polygon points="874.5,455 1122,820 874.5,1185 627,820"/>
     </svg>
-    <h1>ORRERY <span>PLANETARY SYNTHESIZER &nbsp;·&nbsp; v0.300</span></h1>
+    <h1>ORRERY <span>PLANETARY SYNTHESIZER &nbsp;·&nbsp; v0.301</span></h1>
       </div>
       <div class="hx-zone hx-transport">
     <div class="hx-cap">transport</div>
@@ -13720,9 +13720,7 @@ body div.hx-ctlrow.hx-ctlrow{display:grid !important;grid-template-columns:1fr a
    only on clock strikes, and no longer mute or play anything */
 const vb = document.getElementById('vbPlanetsBig'), ck = document.getElementById('vbClock');
 if(vb){ vb.textContent = 'Clock'; vb.title = 'CLOCK — the planetary cards; each planet blips its own C on every planetary second';
-  vb.addEventListener('click', () => setTimeout(() => { if(window.CLOCK_ON || !ck) return;
-    const run = document.getElementById('run');   /* v0.297 — arm CLOCK but don't press START */
-    if(!running && run){ run.click = () => {}; try{ ck.click(); } finally { delete run.click; } } else ck.click(); }, 0)); }
+  } /* v0.301 — CLOCK view no longer engages the CLOCK preset: look without hearing */
 const _sp = showSkyOrPlanets;
 showSkyOrPlanets = window.showSkyOrPlanets = function(m){ const r = _sp.apply(this, arguments);
   if(m !== 'planets' && window.CLOCK_ON && ck) setTimeout(() => { if(window.CLOCK_ON) ck.click(); }, 0); return r; };
