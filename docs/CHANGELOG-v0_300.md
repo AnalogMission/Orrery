@@ -1,6 +1,6 @@
 # Orrery Planetary Synthesizer — changelog
 ## v0.300 — Cards open, toggle gone
-- CLOCK view shows the bottom of every planetary card by default; the +/− button on the nameplate is removed.
+- CLOCK view shows the bottom of every planetary card by default; the +/− button on the nameplate is removed. The CLOCK view no longer engages the CLOCK preset (look without hearing).
 
 ## v0.299 — Moon keys are clicky keys
 - MAJOR MOONS / MINOR MOONS restyled as navigator-style keys. Lit = audible; dark = silent, no glow in SCOPE (dim dot).

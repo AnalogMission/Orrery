@@ -5,7 +5,7 @@ Last updated: v0.300 (session 7, 12 Oct 2026) · ★ milestone: v0.300 (first-re
 - **v0.300 ★ is the first-release candidate**: a simplified, weathered "barn find" instrument.
 - **Look:** very dark grey worn case (not green), procedural rust/pits/chips, worn glass. No pulsing invitations.
 - **Header, one line:** title · TRANSPORT (START, PANIC, REC, now, sync) · VIEW (CLOCK, SKY, SCOPE) · SHOW behind a sun logo (hidden by default).
-- **Views:** CLOCK (the planetary cards, fully open; engages the CLOCK preset but doesn't start), SKY (opens here), SCOPE. No 3D view; no single-planet views; card nameplates don't open machines.
+- **Views:** CLOCK (the planetary cards, fully open; looking does not engage the CLOCK preset), SKY (opens here), SCOPE. No 3D view; no single-planet views; card nameplates don't open machines.
 - **Presets** (one bank, left): DRONE (SCOPE, ⧗, 1 s fade-ins) · CLOCK (fixed Cs Mercury C1 → Pluto C9, blips on planetary seconds, centred reverb, dry) · BELLS · 1st. START engages BELLS if nothing is lit.
 - **Planet keys are mutes:** click toggles, shift-click solos, SUN = all on / all off. Muted scope tubes go dead.
 - **MAJOR / MINOR MOONS** keys right of the planets: lit = audible; dark = silent and unglowing.

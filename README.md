@@ -6,6 +6,6 @@ A browser synthesizer that turns the real motions of the solar system — orbits
 
 Single HTML file, no install. Best in Chrome or Edge with headphones. Press START.
 
-Version v0.301 — first release candidate. See [docs/CHANGELOG-v0_300.md](docs/CHANGELOG-v0_300.md) and [docs/ROADMAP-v0_300.md](docs/ROADMAP-v0_300.md).
+Version v0.300 — first release candidate. See [docs/CHANGELOG-v0_300.md](docs/CHANGELOG-v0_300.md) and [docs/ROADMAP-v0_300.md](docs/ROADMAP-v0_300.md).
 
 © Charlie Stout
